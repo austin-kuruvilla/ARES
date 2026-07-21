@@ -1,0 +1,4 @@
+interface:
+  display_name: "ARES"
+  short_description: "Auditable cyber decisions without API keys"
+  default_prompt: "Use $arc-cyber-decision-engine to run ARES on a cross-product synthetic incident, simulate one governed response, and produce an auditable DecisionBundle."

@@ -1,0 +1,33 @@
+{
+  "name": "arc-cyber-decision-engine",
+  "version": "0.1.0+codex.20260719114847",
+  "description": "ARES turns synthetic cyber evidence into auditable, deterministic response decisions with host-model specialist reasoning and no OpenAI API key.",
+  "author": {
+    "name": "ARES Team"
+  },
+  "keywords": [
+    "cybersecurity",
+    "incident response",
+    "decision intelligence",
+    "evidence",
+    "risk"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ARES",
+    "shortDescription": "Evidence-backed cyber decisions without API keys",
+    "longDescription": "Use ARES in Codex to investigate synthetic cyber incidents, compare response options with deterministic scoring, convene eight specialist perspectives, and produce a citation-complete DecisionBundle. The local MCP server performs no live security actions and requires no external credentials.",
+    "developerName": "ARES Team",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use ARES to investigate the finance OAuth scenario",
+      "Use ARES to compare the safest containment options"
+    ],
+    "brandColor": "#C8FF55"
+  }
+}
