@@ -47,6 +47,16 @@ The plugin exposes the engine through a local MCP server. Codex can review the b
 
 The hosted application can use Cloudflare D1 for runs, action attempts, audit events, and decision memory. Local development falls back to process memory when D1 is not available.
 
+## How I used Codex and GPT-5.6
+
+I used Codex throughout Build Week. It helped me shape the decision contract, build the deterministic engine, create the synthetic incident scenarios, write tests, troubleshoot the graph layout, and improve the guided walkthrough.
+
+I made the final product and engineering decisions. I also made sure the parts that need to be trusted stay in deterministic code. That includes the evidence, graph, scores, rankings, approval flow, and simulation receipts.
+
+GPT-5.6 runs the specialist reasoning layer inside Codex. ARES gives it structured evidence packets for eight different security perspectives. It can compare those perspectives, question the recommended response, keep disagreements visible, and explain the result for security engineers, CISOs, and executives.
+
+The boundary is important to me. GPT-5.6 can explain and challenge a decision, but it cannot add evidence, make up citation IDs, change the graph or scores, choose the final ranking, approve a response, or edit the receipt. Every specialist claim has to cite evidence that is already in the validated DecisionBundle.
+
 ## Scoring
 
 ARES calculates the risk score from four normalized inputs.
